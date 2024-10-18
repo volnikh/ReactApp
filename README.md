@@ -1,14 +1,14 @@
 ### What is done
-Main page with list of employee
-List containt following attributes in grid (id, First name, Last lname, Patronymic, Birth date, Email, Salary, Last modify date)
-Grid is sortable by clicking header
-Grid has a filter, by anetering filter and pressing Enter new GET requested will be sent to server and result of this request displayed
+Main page with list of employee\
+List containt following attributes in grid (id, First name, Last lname, Patronymic, Birth date, Email, Salary, Last modify date)\
+Grid is sortable by clicking header\
+Grid has a filter, by anetering filter and pressing Enter new GET requested will be sent to server and result of this request displayed\
 
 Adding and editing employee done (one component is resposible for add and edit)
 
 ### TO BE DONE
-Validation
-Pagination
+Validation\
+Pagination\
 Authentication
 
 
