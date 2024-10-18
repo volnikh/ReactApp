@@ -50,7 +50,7 @@ export default function AddEmployee({ mode, method }) {
             if (result.status === 200) {
                 //reseting form inputs to make it possible to add several employee wihtout cleaning form manually
                 formRef.current.reset();
-                navigate("/employees")
+                navigate("/")
             }
             else if (result.status === "400") {
 

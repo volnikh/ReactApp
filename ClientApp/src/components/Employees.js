@@ -56,22 +56,22 @@ export default function Employees() {
     }, [fetchData]);
 
     function handleAddEmployeeClick() {
-        navigate("add-employee");
+        navigate("employee");
     }
 
     function handleEditClick(id) {
-        navigate(`edit-employee/${id}`)
+        navigate(`employee/${id}`)
     }
 
-    function handleDeleteClick(id) {
+    async function handleDeleteClick(id) {
         try {
-            const result = fetch(`/Employee/${id}`, {
+            const result = await fetch(`/Employee/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
                 },
             });
-
+            console.log(result.status);
             if (result.status === 200) {
                 setFilter((prev) => {
                     return {
